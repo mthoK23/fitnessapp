@@ -399,3 +399,10 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+.data/
+dist/
+.env
+.env.*
+!.env.example
+coverage/

@@ -1,52 +1,36 @@
 {
-  "name": "fitnessexamapp",
-  "version": "0.1.0",
+  "name": "fittrack",
+  "version": "2.0.0",
   "private": true,
-  "homepage": ".",
-  "dependencies": {
-    "@testing-library/dom": "^10.4.0",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.3.0",
-    "@testing-library/user-event": "^13.5.0",
-    "baseline-browser-mapping": "^2.9.19",
-    "caniuse-lite": "^1.0.30001767",
-    "react": "^19.1.0",
-    "react-circular-progressbar": "^2.2.0",
-    "react-dom": "^19.1.0",
-    "react-router-dom": "^7.5.3",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "start": "node server/dev.js",
+    "dev": "node server/dev.js",
+    "build": "vite build",
+    "serve": "node server/index.js",
+    "test": "vitest run",
+    "test:server": "node --test server/server.test.js",
+    "check": "npm test && npm run test:server && npm run build",
+    "format": "prettier --write src server vite.config.js package.json index.html"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "express": "^5.2.1",
+    "lucide-react": "^0.468.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-router-dom": "^7.18.4"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.21",
-    "gh-pages": "^6.3.0",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^4.1.7"
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@vitejs/plugin-react": "^5.0.0",
+    "jsdom": "^26.1.0",
+    "prettier": "^3.9.9",
+    "vite": "^7.0.0",
+    "vitest": "^5.0.2"
   }
 }
