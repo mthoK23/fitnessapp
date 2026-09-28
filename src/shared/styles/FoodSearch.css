@@ -1,0 +1,200 @@
+.food-search {
+  margin-bottom: 1.5rem;
+}
+
+.search-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0;
+  background: #fafafa;
+  font-size: 1rem;
+}
+
+.search-button {
+  background-color: #ff6b00;
+  color: white;
+  border: none;
+  border-radius: 0;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.search-results {
+  margin-top: 1rem;
+}
+
+.results-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ffd70f;
+  border-radius: 0;
+  background: #fffbe6;
+  box-shadow: 0 2px 8px rgba(207, 197, 83, 0.08);
+}
+
+.result-item {
+  padding: 0.75rem;
+  border-bottom: 1px solid #ffe006;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: background 0.15s;
+  border-radius: 0;
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.result-item:hover, 
+.result-item.focus{
+  background-color: #ffd70f;
+  color: #222;
+}
+
+.food-image {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 0;
+  border: 1px solid #ffd70f;
+  background: #fff;
+}
+
+.food-name{
+  font-weight: 600;
+  font-size: 1rem;
+  color: #222;
+  flex: 1;
+}
+
+.selected-food {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #ffd70f;
+  border-radius: 0;
+  background: #fffbe6;
+  box-shadow: 0 2px 8px rgba(207, 197, 83, 0.08);
+}
+
+.selected-title{
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ff6B00;
+  margin-bottom: 0.5rem;
+}
+
+.serving-control {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.serving-input {
+  width: 80px;
+  padding: 0.375rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0;
+  background: #fafafa;
+}
+
+.nutrition-button {
+  background-color: #ff6B00;
+  color: white;
+  border: none;
+  border-radius: 0;
+  padding: 0.375rem 0.75rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.nutrition-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.nutrition-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.375rem;
+  background-color: #fff;
+  border-radius: 0;
+  border: 1px solid #ffd70f;
+}
+
+.nutrition-label{
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.nutrition-value{
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.search-button,
+.nutrition-button,
+.add-button{
+  background: color #ff6B00;
+  color: white;
+  border: none;
+  border-radius: 0;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.search-button:hover, 
+.nutrion-button:hover,
+.add-button:hover{
+  background-color: #ffd70f;
+  color: #222;
+}
+
+.cancel-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ffd705;
+  border-radius: 0;
+  background-color: white;
+  color: #ff6B00;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cancel-button:hover{
+  background-color: #fffbe6;
+}
+
+.add-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0;
+  background-color: #10b981;
+  color: white;
+  cursor: pointer;
+}
